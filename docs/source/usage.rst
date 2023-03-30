@@ -254,13 +254,13 @@ Parameter
      - Description
    * - market_pair
      - String
-     - market_pair
+     - Market Pair
    * - depth
      - Number
-     - depth
+     - Orders depth quantity: [0, 100, 200, 500...]. 0 returns full depth. Depth = 100 means 50 for each bid/ask side
    * - level
      - Number
-     - level
+     - Level
 
 Responses
 **********
@@ -337,7 +337,7 @@ Parameter
      - Description
    * - market_pair
      - String
-     - market_pair
+     - Market Pair
 
 Responses
 **********
