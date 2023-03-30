@@ -1,4 +1,4 @@
-Usage
+Trade
 =====
 
 .. _installation:
