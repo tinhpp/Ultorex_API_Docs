@@ -34,6 +34,8 @@ Responses
 Example
 **********
 
+Get market data for all tickers and all market pairs
+
 .. example-code::
   .. code-block:: JSON
    {
