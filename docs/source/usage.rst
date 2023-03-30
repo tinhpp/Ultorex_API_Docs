@@ -24,46 +24,22 @@ Responses
    * - Key
      - Type
      - Description
-   * - trading_pairs
-	  - string
-	  - Currency pair
-	* - base_currency
-	  - string
-	  - Symbol/currency code of base pair, eg. BTC
-	* - quote_currency
-	  - string
-	  - Symbol/currency code of target pair, eg. ETH
-	* - last_price
-	  - number
-	  - Last transacted price of base currency based on given target currency
-	* - lowest_ask
-	  - number
-	  - Current lowest ask price
-	* - highest_bid
-	  - number
-	  - Current highest bid price
-	* - base_volume
-	  - number
-	  - Transaction amount in base pair volume.
-	* - quote_volume
-	  - number
-	  - Transaction amount in quote pair volume.
-	* - price_change_percent_24h
-	  - number
-	  - Price change percent 24h
-	* - highest_price_24h
-	  - number
-	  - Rolling 24-hours highest transaction price
-	* - lowest_price_24h
-	  - number
-	  - Rolling 24-hours lowest transaction price.
+   * - timestamp
+     - string
+     - Unix timestamp in milliseconds for when the last updated time occurred.
+   * - asks
+     - array
+     - An array containing 2 elements. The ask price and quantity for each ask order
+   * - bids
+     - array
+     - An array containing 2 elements. The offer price and quantity for each bid order
 
 Example
 **********
 
 Get market data for all tickers and all market pairs
 
-.. code-block:: json
+.. code-block:: JSON
   :linenos:
    {
     "code": 0,
