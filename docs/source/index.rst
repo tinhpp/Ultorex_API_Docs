@@ -1,10 +1,9 @@
-Welcome to Lumache's documentation!
+Welcome to Ultorex API documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+This is the official documentation of Ultorex Restful API, which will be constantly maintained and updated as new APIs are added or existing ones are migrated.
+
+If this is your first visit to this documentation, please make sure you have read the Overview and fully understand how to use Ultorex Restful API. Please also refer to the changelog for any updates.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -19,4 +18,4 @@ Contents
 .. toctree::
 
    usage
-   api
+   Trade

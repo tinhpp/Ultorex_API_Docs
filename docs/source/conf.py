@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Ultorex api document'
+copyright = '2023, Ultorex'
+author = 'Ultorex'
 
 release = '0.1'
 version = '0.1.0'
