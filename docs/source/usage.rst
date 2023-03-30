@@ -7,8 +7,11 @@ Market Overview
 ------------
 
 ### Request method
-* Endpoint: https://api.ultorex.io/api
-* Method: GET
+*** Endpoint: https://api.ultorex.io/api
+*** Method: GET
+#. Step 1.
+#. Step 2.
+#. Step 3.
 
 ### Return value
 * 取得したAPI Keysを利用して、下記のようにHTTPヘッダを設定し、認証情報を送信します
