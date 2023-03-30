@@ -6,9 +6,8 @@ Trade
 Market Overview
 ------------
 
-### Request method
-*** Endpoint: https://api.ultorex.io/api
-*** Method: GET
+When you need to break down a subject, you can break it down into subsections (H3s)
+
 #. Step 1.
 #. Step 2.
 #. Step 3.
