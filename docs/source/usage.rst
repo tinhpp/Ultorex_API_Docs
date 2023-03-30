@@ -17,6 +17,8 @@ Request method
 Responses
 **********
 
+Get market data for all tickers and all market pairs
+
 .. list-table:: Title
    :widths: 25 25 50
    :header-rows: 1
