@@ -100,23 +100,74 @@ Get market data for all tickers and all market pairs
 
 
 
-Creating recipes
+Market Info
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+Get detailed summary for each currency available on the exchange
 
-.. autofunction:: lumache.get_random_ingredients
+Request method
+**********
+  
+* Endpoint: https://api.ultorex.io/api/coinmarketcap/assets
+* Method: GET
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+Responses
+**********
 
-.. autoexception:: lumache.InvalidKindError
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
 
-For example:
+   * - Key
+	  - Type
+	  - Description
+	* - name
+	  - string
+	  - Chain Name
+	* - can_withdraw
+	  - boolean
+	  - Enable Withdraw
+	* - can_deposit
+	  - boolean
+	  - Enable Deposit
+	* - min_withdraw
+	  - string
+	  - Min Withdraw
+	* - max_withdraw
+	  - string
+	  - Max Withdraw
+	* - unified_cryptoasset_id
+	  - string
+	  - Unified cryptoasset id
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+Example
+**********
+
+.. code-block:: json
+  :linenos:
+
+   {
+    "code": 0,
+    "data": {
+       "BTC": {
+            "name": "bitcoin",
+            "can_withdraw": true,
+            "can_deposit": true,
+            "min_withdraw": "0.000011",
+            "max_withdraw": "0.00",
+            "unified_cryptoasset_id": "1"
+        },
+        "XRP": {
+            "name": "xrp",
+            "can_withdraw": true,
+            "can_deposit": true,
+            "min_withdraw": "0.62",
+            "max_withdraw": "0.00",
+            "unified_cryptoasset_id": "52"
+        },
+    }
+   }
+   
+Ticker
+----------------
 
