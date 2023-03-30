@@ -171,3 +171,126 @@ Example
 Ticker
 ----------------
 
+Get 24-hour pricing and volume summary for each market pair
+
+Request method
+**********
+  
+* Endpoint: https://api.ultorex.io/api/coinmarketcap/ticker
+* Method: GET
+
+Responses
+**********
+
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Key
+     - Type
+     - Description
+   * - last_price
+     - string
+     - Last transacted price of base currency based on given target currency (unit in base or target)
+   * - base_volume
+     - string
+     - 24 hour trading volume for the pair (unit in base)
+   * - quote_volume
+     - string
+     - 24 hour trading volume for the pair (unit in target)
+   * - base_id
+     - string
+     - Base id
+   * - isFrozen
+     - string
+     - Is Frozen
+
+Example
+**********
+
+.. code-block:: json
+  :linenos:
+
+   {
+    "code": 0,
+    "data": {
+        "ORBS_USD": {
+            "last_price": "0.05329",
+            "base_volume": "68863.00000",
+            "quote_volume": "3675.26662",
+            "base_id": "3835",
+            "isFrozen": "0"
+        },
+        "FTM_BTC": {
+            "last_price": "0.00001140",
+            "base_volume": "164801.00000000",
+            "quote_volume": "1.89923943",
+            "base_id": "3513",
+            "quote_id": "1",
+            "isFrozen": "0"
+        },
+      }
+   }
+   
+Historical Trades
+----------------
+Get a complete level 2 order book
+
+Request method
+**********
+  
+* Endpoint: https://api.ultorex.io/api/coinmarketcap/orderbook/{market_pair}
+* Method: GET
+
+Responses
+**********
+
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Key
+     - Type
+     - Description
+   * - timestamp
+     - string
+     - Unix timestamp in milliseconds for when the last updated time occurred.
+   * - asks
+     - array
+     - An array containing 2 elements. The ask price and quantity for each ask order
+   * - bids
+     - array
+     - An array containing 2 elements. The offer price and quantity for each bid order
+
+Example
+**********
+
+.. code-block:: json
+  :linenos:
+
+   {
+    "code": 0,
+    "data": {
+        "timestamp": "1654675049562",
+        "asks": [
+            [
+                "0.0020510",
+                "0.17"
+            ],
+            [
+                "0.0020512",
+                "0.34"
+            ],
+        ],
+       "bids":[
+           [
+                "0.0020331",
+                "0.69"
+            ],
+            [
+                "0.0020330",
+                "0.58"
+            ],
+        ]
+      }
+   }
