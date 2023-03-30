@@ -165,7 +165,7 @@ Example
             "max_withdraw": "0.00",
             "unified_cryptoasset_id": "52"
         },
-    }
+      }
    }
    
 Ticker
@@ -293,4 +293,71 @@ Example
             ],
         ]
       }
+   }
+
+Historical Data
+----------------
+Get data on all recently completed trades
+
+Request method
+**********
+  
+* Endpoint: https://api.ultorex.io/api/coinmarketcap/trades/{market_pair}
+* Method: GET
+
+Responses
+**********
+
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Key
+     - Type
+     - Description
+   * - trade_id
+     - string
+     - A unique ID associated with the trade for the currency pair transaction
+   * - price
+     - string
+     - Transaction price in base pair volume
+   * - base_volume
+     - string
+     - Transaction amount in base pair volume.
+   * - quote_volume
+     - string
+     - Transaction amount in target pair volume.
+   * - timestamp
+     - string
+     - Unix timestamp in milliseconds for when the transaction occurred.
+   * - type
+     - string
+     - Used to determine the type of the transaction that was completed.
+
+Example
+**********
+
+.. code-block:: json
+  :linenos:
+
+   {
+    "code": 0,
+    "data": [
+        {
+            "trade_id": "984127582519715840",
+            "price": "0.0020414",
+            "base_volume": "0.15",
+            "quote_volume": "0.00030621",
+            "timestamp": "1654675899879",
+            "type": "buy"
+        },
+         {
+            "trade_id": "984163011327453184",
+            "price": "0.0020433",
+            "base_volume": "0.02",
+            "quote_volume": "0.00004086",
+            "timestamp": "1654684346765",
+            "type": "buy"
+        }
+      ]
    }
