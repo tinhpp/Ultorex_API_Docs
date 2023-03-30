@@ -1,4 +1,4 @@
-Trade
+Market
 =====
 
 .. _summary:
@@ -119,26 +119,26 @@ Responses
    :header-rows: 1
 
    * - Key
-	  - Type
-	  - Description
-	* - name
-	  - string
-	  - Chain Name
-	* - can_withdraw
-	  - boolean
-	  - Enable Withdraw
-	* - can_deposit
-	  - boolean
-	  - Enable Deposit
-	* - min_withdraw
-	  - string
-	  - Min Withdraw
-	* - max_withdraw
-	  - string
-	  - Max Withdraw
-	* - unified_cryptoasset_id
-	  - string
-	  - Unified cryptoasset id
+     - Type
+     - Description
+   * - name
+     - string
+     - Chain Name
+   * - can_withdraw
+     - boolean
+     - Enable Withdraw
+   * - can_deposit
+     - boolean
+     - Enable Deposit
+   * - min_withdraw
+     - string
+     - Min Withdraw
+   * - max_withdraw
+     - string
+     - Max Withdraw
+   * - unified_cryptoasset_id
+     - string
+     - Unified cryptoasset id
 
 Example
 **********
@@ -242,6 +242,26 @@ Request method
 * Endpoint: https://api.ultorex.io/api/coinmarketcap/orderbook/{market_pair}
 * Method: GET
 
+Parameter
+**********
+
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Key
+     - Type
+     - Description
+   * - market_pair
+     - String
+     - market_pair
+   * - depth
+     - Number
+     - depth
+   * - level
+     - Number
+     - level
+
 Responses
 **********
 
@@ -304,6 +324,20 @@ Request method
   
 * Endpoint: https://api.ultorex.io/api/coinmarketcap/trades/{market_pair}
 * Method: GET
+
+Parameter
+**********
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Key
+     - Type
+     - Description
+   * - market_pair
+     - String
+     - market_pair
 
 Responses
 **********
