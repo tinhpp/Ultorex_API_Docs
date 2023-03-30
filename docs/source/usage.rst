@@ -6,14 +6,16 @@ Trade
 Market Overview
 ------------
 
-When you need to break down a subject, you can break it down into subsections (H3s)
+Get market data for all tickers and all market pairs
 
-#. Step 1.
-#. Step 2.
-#. Step 3.
+Request method
+**********
+  
+* Endpoint: https://api.ultorex.io/api/coinmarketcap/summary
+* Method: GET
 
-### Return value
-* 取得したAPI Keysを利用して、下記のようにHTTPヘッダを設定し、認証情報を送信します
+Responses
+**********
 
 Creating recipes
 ----------------
